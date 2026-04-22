@@ -1,0 +1,150 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Website Redesign",
+      "description": "Complete overhaul of the company website with modern design",
+      "status": "active",
+      "priority": "high",
+      "deadline": "2024-06-30",
+      "createdAt": "2024-01-15T10:00:00.000Z",
+      "updatedAt": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Mobile App MVP",
+      "description": "Build minimum viable product for the mobile application",
+      "status": "active",
+      "priority": "high",
+      "deadline": "2024-05-15",
+      "createdAt": "2024-01-20T09:00:00.000Z",
+      "updatedAt": "2024-01-20T09:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "API Integration",
+      "description": "Integrate third-party payment and analytics APIs",
+      "status": "on-hold",
+      "priority": "medium",
+      "deadline": "2024-07-01",
+      "createdAt": "2024-02-01T11:00:00.000Z",
+      "updatedAt": "2024-02-01T11:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "Database Migration",
+      "description": "Migrate legacy database to new PostgreSQL cluster",
+      "status": "completed",
+      "priority": "critical",
+      "deadline": "2024-03-31",
+      "createdAt": "2024-01-10T08:00:00.000Z",
+      "updatedAt": "2024-03-31T17:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "projectId": "1",
+      "title": "Design mockups",
+      "description": "Create Figma mockups for all key pages",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Anna Shevchenko",
+      "dueDate": "2024-02-15",
+      "order": 0,
+      "createdAt": "2024-01-15T10:00:00.000Z",
+      "updatedAt": "2024-02-15T10:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "projectId": "1",
+      "title": "Frontend development",
+      "description": "Implement Vue.js components based on approved designs",
+      "status": "in-progress",
+      "priority": "high",
+      "assignee": "Mykola Kovalenko",
+      "dueDate": "2024-04-30",
+      "order": 1,
+      "createdAt": "2024-02-16T09:00:00.000Z",
+      "updatedAt": "2024-02-16T09:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "projectId": "1",
+      "title": "SEO optimization",
+      "description": "Implement meta tags, sitemap, and structured data",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Olena Petrenko",
+      "dueDate": "2024-05-31",
+      "order": 2,
+      "createdAt": "2024-02-20T10:00:00.000Z",
+      "updatedAt": "2024-02-20T10:00:00.000Z"
+    },
+    {
+      "id": "t4",
+      "projectId": "2",
+      "title": "UI/UX Design",
+      "description": "Design mobile app screens and user flows",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Anna Shevchenko",
+      "dueDate": "2024-02-28",
+      "order": 0,
+      "createdAt": "2024-01-20T09:00:00.000Z",
+      "updatedAt": "2024-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "t5",
+      "projectId": "2",
+      "title": "React Native setup",
+      "description": "Initialize project, configure navigation and state management",
+      "status": "in-progress",
+      "priority": "high",
+      "assignee": "Ivan Bondarenko",
+      "dueDate": "2024-03-31",
+      "order": 1,
+      "createdAt": "2024-03-01T09:00:00.000Z",
+      "updatedAt": "2024-03-01T09:00:00.000Z"
+    },
+    {
+      "id": "t6",
+      "projectId": "2",
+      "title": "Push notifications",
+      "description": "Integrate Firebase push notifications",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Ivan Bondarenko",
+      "dueDate": "2024-04-30",
+      "order": 2,
+      "createdAt": "2024-03-05T10:00:00.000Z",
+      "updatedAt": "2024-03-05T10:00:00.000Z"
+    },
+    {
+      "id": "t7",
+      "projectId": "3",
+      "title": "Payment gateway research",
+      "description": "Evaluate Stripe, LiqPay and Monobank options",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Dmytro Lysenko",
+      "dueDate": "2024-02-28",
+      "order": 0,
+      "createdAt": "2024-02-01T11:00:00.000Z",
+      "updatedAt": "2024-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "t8",
+      "projectId": "3",
+      "title": "Stripe integration",
+      "description": "Implement Stripe payment processing",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Mykola Kovalenko",
+      "dueDate": "2024-05-15",
+      "order": 1,
+      "createdAt": "2024-03-01T10:00:00.000Z",
+      "updatedAt": "2024-03-01T10:00:00.000Z"
+    }
+  ]
+}

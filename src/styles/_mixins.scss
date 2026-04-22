@@ -1,0 +1,98 @@
+@use 'variables' as *;
+
+@mixin flex($dir: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+  @if $gap != 0 { gap: $gap; }
+}
+
+@mixin card {
+  background: white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow;
+  border: 1px solid $gray-200;
+}
+
+@mixin btn-base {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: $border-radius;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all $transition;
+  white-space: nowrap;
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+@mixin btn-primary {
+  @include btn-base;
+  background: $primary;
+  color: white;
+  &:hover:not(:disabled) { background: $primary-hover; }
+}
+
+@mixin btn-secondary {
+  @include btn-base;
+  background: $gray-100;
+  color: $gray-700;
+  &:hover:not(:disabled) { background: $gray-200; }
+}
+
+@mixin btn-danger {
+  @include btn-base;
+  background: $error;
+  color: white;
+  &:hover:not(:disabled) { background: $error-hover; }
+}
+
+@mixin input-base {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid $gray-300;
+  border-radius: $border-radius;
+  font-size: $font-size-sm;
+  font-family: $font-family;
+  color: $gray-900;
+  background: white;
+  transition: border-color $transition, box-shadow $transition;
+  outline: none;
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 3px rgba($primary, 0.1);
+  }
+  &::placeholder { color: $gray-400; }
+}
+
+@mixin badge($bg, $color: white) {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  background: $bg;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin respond-to($bp) {
+  @if $bp == sm { @media (max-width: 640px) { @content; } }
+  @else if $bp == md { @media (max-width: 768px) { @content; } }
+  @else if $bp == lg { @media (max-width: 1024px) { @content; } }
+}
