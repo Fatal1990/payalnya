@@ -9,9 +9,6 @@
             <span class="header__breadcrumb-current">{{ currentProjectName }}</span>
           </template>
         </div>
-        <div class="header__right">
-          <span class="header__status">🟢 Mock API</span>
-        </div>
       </header>
 
       <main class="main-content">
@@ -79,8 +76,6 @@ const currentProjectName = computed(() => {
     color: $gray-800;
     font-weight: 600;
   }
-
-  &__right { @include flex(row, flex-end, center, 16px); }
 
   &__status {
     font-size: $font-size-xs;
