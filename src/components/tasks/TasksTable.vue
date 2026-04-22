@@ -30,7 +30,6 @@
       </div>
       <button class="btn-primary" @click="$emit('add')">+ New Task</button>
     </div>
-
     <div class="ag-theme-alpine tasks-table__grid">
       <AgGridVue
         :rowData="store.filteredTasks"
