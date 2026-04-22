@@ -7,7 +7,8 @@
     "dev:full": "concurrently \"vite\" \"json-server --watch db.json --port 3001\"",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.ts,.tsx --fix"
+    "lint": "eslint . --ext .vue,.ts,.tsx --fix",
+    "deploy": "npm run build && npx gh-pages -d dist --dotfiles --repo https://fatal1990:YOUR_TOKEN@github.com/fatal1990/payalnya.git"
   },
   "dependencies": {
     "ag-grid-community": "^31.1.1",
