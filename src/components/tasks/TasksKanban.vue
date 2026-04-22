@@ -17,7 +17,7 @@
       <VueDraggable
         v-model="lists[col.status]"
         group="tasks"
-        animation="200"
+        :animation="200"
         ghost-class="kanban__card--ghost"
         chosen-class="kanban__card--chosen"
         drag-class="kanban__card--drag"
@@ -306,6 +306,7 @@ function isOverdue(date: string) {
     border-radius: $border-radius;
     color: $gray-400;
     font-size: $font-size-sm;
+    pointer-events: none;
   }
 
   &__add-btn {
